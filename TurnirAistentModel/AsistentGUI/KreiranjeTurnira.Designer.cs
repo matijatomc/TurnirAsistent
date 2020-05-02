@@ -42,14 +42,8 @@
             this.btnIzbrisiNagradu = new System.Windows.Forms.Button();
             this.lstNagrada = new System.Windows.Forms.ListBox();
             this.lblNagrada = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtNazivNagrade = new System.Windows.Forms.TextBox();
-            this.lblKolicina = new System.Windows.Forms.Label();
-            this.txtKolicina = new System.Windows.Forms.TextBox();
-            this.chbKn = new System.Windows.Forms.CheckBox();
-            this.chbPosto = new System.Windows.Forms.CheckBox();
-            this.btnUnesiNagradu = new System.Windows.Forms.Button();
             this.btnOdustani = new System.Windows.Forms.Button();
+            this.btnDodajNagradu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblAkontacija
@@ -216,73 +210,6 @@
             this.lblNagrada.TabIndex = 10;
             this.lblNagrada.Text = "Nagrada:";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label2.Location = new System.Drawing.Point(63, 329);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 25);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Naziv nagrade:";
-            // 
-            // txtNazivNagrade
-            // 
-            this.txtNazivNagrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtNazivNagrade.ForeColor = System.Drawing.Color.DarkOrange;
-            this.txtNazivNagrade.Location = new System.Drawing.Point(226, 329);
-            this.txtNazivNagrade.Name = "txtNazivNagrade";
-            this.txtNazivNagrade.Size = new System.Drawing.Size(131, 31);
-            this.txtNazivNagrade.TabIndex = 15;
-            // 
-            // lblKolicina
-            // 
-            this.lblKolicina.AutoSize = true;
-            this.lblKolicina.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblKolicina.Location = new System.Drawing.Point(63, 376);
-            this.lblKolicina.Name = "lblKolicina";
-            this.lblKolicina.Size = new System.Drawing.Size(94, 25);
-            this.lblKolicina.TabIndex = 16;
-            this.lblKolicina.Text = "Količina:";
-            // 
-            // txtKolicina
-            // 
-            this.txtKolicina.ForeColor = System.Drawing.Color.DarkOrange;
-            this.txtKolicina.Location = new System.Drawing.Point(163, 373);
-            this.txtKolicina.Name = "txtKolicina";
-            this.txtKolicina.Size = new System.Drawing.Size(194, 31);
-            this.txtKolicina.TabIndex = 17;
-            // 
-            // chbKn
-            // 
-            this.chbKn.AutoSize = true;
-            this.chbKn.Location = new System.Drawing.Point(125, 420);
-            this.chbKn.Name = "chbKn";
-            this.chbKn.Size = new System.Drawing.Size(57, 29);
-            this.chbKn.TabIndex = 18;
-            this.chbKn.Text = "Kn";
-            this.chbKn.UseVisualStyleBackColor = true;
-            // 
-            // chbPosto
-            // 
-            this.chbPosto.AutoSize = true;
-            this.chbPosto.Location = new System.Drawing.Point(229, 420);
-            this.chbPosto.Name = "chbPosto";
-            this.chbPosto.Size = new System.Drawing.Size(50, 29);
-            this.chbPosto.TabIndex = 19;
-            this.chbPosto.Text = "%";
-            this.chbPosto.UseVisualStyleBackColor = true;
-            // 
-            // btnUnesiNagradu
-            // 
-            this.btnUnesiNagradu.Location = new System.Drawing.Point(152, 465);
-            this.btnUnesiNagradu.Name = "btnUnesiNagradu";
-            this.btnUnesiNagradu.Size = new System.Drawing.Size(159, 47);
-            this.btnUnesiNagradu.TabIndex = 20;
-            this.btnUnesiNagradu.Text = "Unesi";
-            this.btnUnesiNagradu.UseVisualStyleBackColor = true;
-            // 
             // btnOdustani
             // 
             this.btnOdustani.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
@@ -296,19 +223,26 @@
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = true;
             // 
+            // btnDodajNagradu
+            // 
+            this.btnDodajNagradu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.btnDodajNagradu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnDodajNagradu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDodajNagradu.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btnDodajNagradu.Location = new System.Drawing.Point(141, 397);
+            this.btnDodajNagradu.Name = "btnDodajNagradu";
+            this.btnDodajNagradu.Size = new System.Drawing.Size(181, 47);
+            this.btnDodajNagradu.TabIndex = 22;
+            this.btnDodajNagradu.Text = "Dodaj nagradu";
+            this.btnDodajNagradu.UseVisualStyleBackColor = true;
+            // 
             // KreiranjeTurnira
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 628);
+            this.Controls.Add(this.btnDodajNagradu);
             this.Controls.Add(this.btnOdustani);
-            this.Controls.Add(this.btnUnesiNagradu);
-            this.Controls.Add(this.chbPosto);
-            this.Controls.Add(this.chbKn);
-            this.Controls.Add(this.txtKolicina);
-            this.Controls.Add(this.lblKolicina);
-            this.Controls.Add(this.txtNazivNagrade);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnUrediNagradu);
             this.Controls.Add(this.btnIzbrisiNagradu);
             this.Controls.Add(this.lstNagrada);
@@ -349,13 +283,7 @@
         private System.Windows.Forms.Button btnIzbrisiNagradu;
         private System.Windows.Forms.ListBox lstNagrada;
         private System.Windows.Forms.Label lblNagrada;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtNazivNagrade;
-        private System.Windows.Forms.Label lblKolicina;
-        private System.Windows.Forms.TextBox txtKolicina;
-        private System.Windows.Forms.CheckBox chbKn;
-        private System.Windows.Forms.CheckBox chbPosto;
-        private System.Windows.Forms.Button btnUnesiNagradu;
         private System.Windows.Forms.Button btnOdustani;
+        private System.Windows.Forms.Button btnDodajNagradu;
     }
 }
