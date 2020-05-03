@@ -1,0 +1,5 @@
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\TurnirAistentModel\bin\Debug\TurnirAistentModel.dll
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\TurnirAistentModel\bin\Debug\TurnirAistentModel.pdb
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\TurnirAistentModel\obj\Debug\TurnirAsistentModel.csprojAssemblyReference.cache
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\TurnirAistentModel\obj\Debug\TurnirAistentModel.dll
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\TurnirAistentModel\obj\Debug\TurnirAistentModel.pdb

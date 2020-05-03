@@ -1,0 +1,16 @@
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\AsistentGUI\bin\Debug\AsistentGUI.exe.config
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\AsistentGUI\bin\Debug\AsistentGUI.exe
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\AsistentGUI\bin\Debug\AsistentGUI.pdb
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\AsistentGUI\bin\Debug\TurnirAistentModel.dll
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\AsistentGUI\bin\Debug\TurnirAistentModel.pdb
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\AsistentGUI\obj\Debug\AsistentGUI.csprojAssemblyReference.cache
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\AsistentGUI\obj\Debug\AsistentGUI.KreiranjeTurnira.resources
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\AsistentGUI\obj\Debug\AsistentGUI.KreiranjeTima.resources
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\AsistentGUI\obj\Debug\AsistentGUI.PregledTurnira.resources
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\AsistentGUI\obj\Debug\AsistentGUI.Properties.Resources.resources
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\AsistentGUI\obj\Debug\AsistentGUI.TurnirAsistent.resources
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\AsistentGUI\obj\Debug\AsistentGUI.csproj.GenerateResource.cache
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\AsistentGUI\obj\Debug\AsistentGUI.csproj.CopyComplete
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\AsistentGUI\obj\Debug\AsistentGUI.exe
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\AsistentGUI\obj\Debug\AsistentGUI.pdb
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\AsistentGUI\obj\Debug\AsistentGUI.KreiranjeNagrade.resources

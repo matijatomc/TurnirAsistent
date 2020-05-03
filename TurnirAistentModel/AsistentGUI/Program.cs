@@ -16,7 +16,10 @@ namespace AsistentGUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PregledTurnira());
+
+            // Zapocni spajanje na bazu podataka
+            TurnirAistentModel.GlobalConfig.ZapoceteKonekcije(true, true);
+            Application.Run(new KreiranjeNagrade());
         }
     }
 }
