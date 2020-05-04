@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TurnirAistentModel.Konekcije;
 
 namespace TurnirAistentModel
 {
@@ -24,6 +26,11 @@ namespace TurnirAistentModel
                 TextKonekcija text = new TextKonekcija();
                 Konekcije.Add(text);
             }
+        }
+        
+        public static string KonekcijaString(string name)
+        {
+            return ConfigurationManager.ConnectionStrings[name].ConnectionString;
         }
     }
 }

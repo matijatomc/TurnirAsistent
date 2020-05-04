@@ -46,48 +46,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KreiranjeNagrade.cs">
+    <Compile Include="Forme\KreiranjeNagrade.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KreiranjeNagrade.Designer.cs">
+    <Compile Include="Forme\KreiranjeNagrade.Designer.cs">
       <DependentUpon>KreiranjeNagrade.cs</DependentUpon>
     </Compile>
-    <Compile Include="KreiranjeTurnira.cs">
+    <Compile Include="Forme\KreiranjeTurnira.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KreiranjeTurnira.Designer.cs">
+    <Compile Include="Forme\KreiranjeTurnira.Designer.cs">
       <DependentUpon>KreiranjeTurnira.cs</DependentUpon>
     </Compile>
-    <Compile Include="KreiranjeTima.cs">
+    <Compile Include="Forme\KreiranjeTima.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KreiranjeTima.Designer.cs">
+    <Compile Include="Forme\KreiranjeTima.Designer.cs">
       <DependentUpon>KreiranjeTima.cs</DependentUpon>
     </Compile>
-    <Compile Include="PregledTurnira.cs">
+    <Compile Include="Forme\PregledTurnira.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PregledTurnira.Designer.cs">
+    <Compile Include="Forme\PregledTurnira.Designer.cs">
       <DependentUpon>PregledTurnira.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TurnirAsistent.cs">
+    <Compile Include="Forme\TurnirAsistent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TurnirAsistent.Designer.cs">
+    <Compile Include="Forme\TurnirAsistent.Designer.cs">
       <DependentUpon>TurnirAsistent.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="KreiranjeNagrade.resx">
+    <EmbeddedResource Include="Forme\KreiranjeNagrade.resx">
       <DependentUpon>KreiranjeNagrade.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KreiranjeTurnira.resx">
+    <EmbeddedResource Include="Forme\KreiranjeTurnira.resx">
       <DependentUpon>KreiranjeTurnira.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KreiranjeTima.resx">
+    <EmbeddedResource Include="Forme\KreiranjeTima.resx">
       <DependentUpon>KreiranjeTima.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PregledTurnira.resx">
+    <EmbeddedResource Include="Forme\PregledTurnira.resx">
       <DependentUpon>PregledTurnira.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -99,7 +99,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TurnirAsistent.resx">
+    <EmbeddedResource Include="Forme\TurnirAsistent.resx">
       <DependentUpon>TurnirAsistent.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

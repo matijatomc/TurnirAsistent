@@ -31,7 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.35\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,17 +45,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EkipaModel.cs" />
+    <Compile Include="Modeli\EkipaModel.cs" />
     <Compile Include="GlobalConfig.cs" />
-    <Compile Include="IKonekcija.cs" />
-    <Compile Include="NagradaModel.cs" />
-    <Compile Include="OsobaModel.cs" />
+    <Compile Include="Konekcije\IKonekcija.cs" />
+    <Compile Include="Modeli\NagradaModel.cs" />
+    <Compile Include="Modeli\OsobaModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqlKonekcija.cs" />
-    <Compile Include="SudionikModel.cs" />
-    <Compile Include="TextKonekcija.cs" />
-    <Compile Include="TurnirModel.cs" />
-    <Compile Include="UtakmicaModel.cs" />
+    <Compile Include="Konekcije\SqlKonekcija.cs" />
+    <Compile Include="Modeli\SudionikModel.cs" />
+    <Compile Include="Konekcije\TextKonekcija.cs" />
+    <Compile Include="Modeli\TurnirModel.cs" />
+    <Compile Include="Modeli\UtakmicaModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

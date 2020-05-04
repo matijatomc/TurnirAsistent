@@ -3,3 +3,6 @@ C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\TurnirAistentModel\b
 C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\TurnirAistentModel\obj\Debug\TurnirAsistentModel.csprojAssemblyReference.cache
 C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\TurnirAistentModel\obj\Debug\TurnirAistentModel.dll
 C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\TurnirAistentModel\obj\Debug\TurnirAistentModel.pdb
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\TurnirAistentModel\bin\Debug\Dapper.dll
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\TurnirAistentModel\bin\Debug\Dapper.xml
+C:\Users\Matija\Desktop\sk\programiranje\TurnirAistentModel\TurnirAistentModel\obj\Debug\TurnirAsistentModel.csproj.CopyComplete
