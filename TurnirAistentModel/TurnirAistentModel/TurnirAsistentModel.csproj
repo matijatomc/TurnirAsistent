@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums.cs" />
+    <Compile Include="Konekcije\TextKonekcijeProcesor.cs" />
     <Compile Include="Modeli\EkipaModel.cs" />
     <Compile Include="GlobalConfig.cs" />
     <Compile Include="Konekcije\IKonekcija.cs" />

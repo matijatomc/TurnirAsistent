@@ -30,12 +30,8 @@ namespace AsistentGUI.Forme
                     txtIznosNagrade.Text,
                     txtPostotakNagrade.Text);
 
-
-                foreach (IKonekcija bp in GlobalConfig.Konekcije)
-                {
-                    bp.StvoriNagradu(model);
-                }
-
+                GlobalConfig.Konekcija.StvoriNagradu(model);
+                
                 txtOsvojenoMjesto.Text = "";
                 txtNazivNagrade.Text = "";
                 txtIznosNagrade.Text = "0";

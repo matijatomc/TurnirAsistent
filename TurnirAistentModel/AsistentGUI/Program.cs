@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TurnirAistentModel;
 
 namespace AsistentGUI
 {
@@ -19,7 +20,7 @@ namespace AsistentGUI
             Application.SetCompatibleTextRenderingDefault(false);
 
             // Zapocni spajanje na bazu podataka
-            TurnirAistentModel.GlobalConfig.ZapoceteKonekcije(true, true);
+            TurnirAistentModel.GlobalConfig.ZapoceteKonekcije(TipBazePodatak.TextDatoteka);
             Application.Run(new KreiranjeNagrade());
         }
     }

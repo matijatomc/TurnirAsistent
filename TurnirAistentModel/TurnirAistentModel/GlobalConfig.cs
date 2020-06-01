@@ -10,21 +10,21 @@ namespace TurnirAistentModel
 {
     public static class GlobalConfig
     {
-        public static List<IKonekcija> Konekcije { get; private set; } = new List<IKonekcija>();
+        public static IKonekcija Konekcija { get; private set; }
 
-        public static void ZapoceteKonekcije(bool bazaPodataka, bool textDatoteke)
+        public static void ZapoceteKonekcije(TipBazePodatak db)
         {
-            if (bazaPodataka)
+            if (db == TipBazePodatak.Sql)
             {
                 // TODO - Spojit sql pravilno
                 SqlKonekcija sql = new SqlKonekcija();
-                Konekcije.Add(sql);
+                Konekcija = sql;
             }
-            if (textDatoteke)
+            else if (db == TipBazePodatak.TextDatoteka)
             {
                 // TODO - Spojit text
                 TextKonekcija text = new TextKonekcija();
-                Konekcije.Add(text);
+                Konekcija = text;
             }
         }
         
