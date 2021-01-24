@@ -12,6 +12,7 @@ namespace TurnirAistentModel.Konekcije
     {
 
         private const string NagradeDatoteke = "NagradaModeli.csv";
+        private const string OsobeDatoteke = "OsobaModeli.csv";
 
         // TODO - Spoji StvoriNagradu u text datoteku
         public NagradaModel StvoriNagradu(NagradaModel model)
@@ -34,6 +35,26 @@ namespace TurnirAistentModel.Konekcije
             // Pretvori nagradu u list<string>
             // Spremit list<string> u text datoteku
             nagrade.SpremiUNagradaDatoteke(NagradeDatoteke);
+
+            return model;
+        }
+
+        public OsobaModel StvoriOsobu(OsobaModel model)
+        {
+            List<OsobaModel> osobe = OsobeDatoteke.CijeliPutPodataka().UcitajDatoteku().PretvoriUOsobaModel();
+
+            int currentID = 1;
+
+            if(osobe.Count > 0)
+            {
+                currentID = osobe.OrderByDescending(x => x.Id).First().Id + 1;
+            }
+
+            model.Id = currentID;
+
+            osobe.Add(model);
+
+            osobe.SpremiUOsobaDatoteke(OsobeDatoteke);
 
             return model;
         }

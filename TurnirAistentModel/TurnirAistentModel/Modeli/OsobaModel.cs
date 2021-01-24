@@ -9,6 +9,10 @@ namespace TurnirAistentModel.Modeli
     public class OsobaModel
     {
         /// <summary>
+        /// Indetifikaciska oznaka za osobu 
+        /// </summary>
+        public int Id { get; set; }
+        /// <summary>
         /// Ime jednog člana jedne kipe
         /// </summary>
         public string Ime { get; set; }

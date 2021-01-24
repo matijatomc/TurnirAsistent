@@ -36,5 +36,24 @@ namespace TurnirAistentModel.Konekcije
                 return model;
             }
         }
+
+        public OsobaModel StvoriOsobu(OsobaModel model)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.KonekcijaString("TurnirBaza")))
+            {
+                var p = new DynamicParameters();
+                p.Add("@ime", model.Ime);
+                p.Add("@prezime", model.Prezime);
+                p.Add("@email", model.EmailAdresa);
+                p.Add("@brojMobitela", model.BrojMobitela);
+                p.Add("@ID", 0, dbType: DbType.Int32, direction: ParameterDirection.Output);
+
+                connection.Execute("dbo.spOsoba_Upis", p, commandType: CommandType.StoredProcedure);
+
+                model.Id = p.Get<int>("@ID");
+
+                return model;
+            }
+        }
     }
 }

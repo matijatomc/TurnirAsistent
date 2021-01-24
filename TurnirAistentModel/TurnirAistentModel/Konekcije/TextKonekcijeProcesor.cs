@@ -45,6 +45,26 @@ namespace TurnirAistentModel.Konekcije.TextPomagaci
             return output;
         }
 
+        public static List<OsobaModel> PretvoriUOsobaModel(this List<string> lines)
+        {
+            List<OsobaModel> output = new List<OsobaModel>();
+
+            foreach (string line in lines)
+            {
+                string[] cols = line.Split(',');
+
+                OsobaModel p = new OsobaModel();
+                p.Id = int.Parse(cols[0]);
+                p.Ime = cols[1];
+                p.Prezime = cols[2];
+                p.EmailAdresa = cols[3];
+                p.BrojMobitela = cols[4];
+                output.Add(p);
+            }
+
+            return output;
+        }
+
         public static void SpremiUNagradaDatoteke(this List<NagradaModel> models, string imeDatoteke)
         {
             List<string> lines = new List<string>();
@@ -56,5 +76,17 @@ namespace TurnirAistentModel.Konekcije.TextPomagaci
 
             File.WriteAllLines(imeDatoteke.CijeliPutPodataka(), lines);
         } 
+
+        public static void SpremiUOsobaDatoteke(this List<OsobaModel> models, string imeDatoteke)
+        {
+            List<string> lines = new List<string>();
+
+            foreach (OsobaModel p in models)
+            {
+                lines.Add($"{ p.Id },{ p.Ime },{ p.Prezime },{ p.EmailAdresa },{ p.BrojMobitela }");
+            }
+
+            File.WriteAllLines(imeDatoteke.CijeliPutPodataka(), lines);
+        }
     }
 }

@@ -21,7 +21,7 @@ namespace AsistentGUI
 
             // Zapocni spajanje na bazu podataka
             TurnirAistentModel.GlobalConfig.ZapoceteKonekcije(TipBazePodatak.TextDatoteka);
-            Application.Run(new KreiranjeNagrade());
+            Application.Run(new KreiranjeTima());
         }
     }
 }

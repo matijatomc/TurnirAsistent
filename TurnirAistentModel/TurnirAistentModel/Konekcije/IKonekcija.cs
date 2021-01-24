@@ -9,6 +9,7 @@ namespace TurnirAistentModel.Konekcije
 {
     public interface IKonekcija
     {
-        NagradaModel StvoriNagradu(NagradaModel model); 
+        NagradaModel StvoriNagradu(NagradaModel model);
+        OsobaModel StvoriOsobu(OsobaModel model);
     }
 }

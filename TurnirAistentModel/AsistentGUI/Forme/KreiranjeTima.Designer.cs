@@ -39,8 +39,8 @@
             this.txtPrezime = new System.Windows.Forms.TextBox();
             this.Prezime = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtBrojMobitela = new System.Windows.Forms.TextBox();
             this.lblTelefon = new System.Windows.Forms.Label();
             this.btnDodajIgrac = new System.Windows.Forms.Button();
             this.lblIgrac = new System.Windows.Forms.Label();
@@ -124,7 +124,6 @@
             this.txtPrezime.Name = "txtPrezime";
             this.txtPrezime.Size = new System.Drawing.Size(163, 31);
             this.txtPrezime.TabIndex = 10;
-            this.txtPrezime.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Prezime
             // 
@@ -144,19 +143,19 @@
             this.lblEmail.TabIndex = 11;
             this.lblEmail.Text = "Email:";
             // 
-            // textBox1
+            // txtEmail
             // 
-            this.textBox1.Location = new System.Drawing.Point(180, 340);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(163, 31);
-            this.textBox1.TabIndex = 12;
+            this.txtEmail.Location = new System.Drawing.Point(180, 340);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(163, 31);
+            this.txtEmail.TabIndex = 12;
             // 
-            // textBox2
+            // txtBrojMobitela
             // 
-            this.textBox2.Location = new System.Drawing.Point(180, 377);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(163, 31);
-            this.textBox2.TabIndex = 13;
+            this.txtBrojMobitela.Location = new System.Drawing.Point(180, 377);
+            this.txtBrojMobitela.Name = "txtBrojMobitela";
+            this.txtBrojMobitela.Size = new System.Drawing.Size(163, 31);
+            this.txtBrojMobitela.TabIndex = 13;
             // 
             // lblTelefon
             // 
@@ -175,6 +174,7 @@
             this.btnDodajIgrac.TabIndex = 15;
             this.btnDodajIgrac.Text = "Dodaj";
             this.btnDodajIgrac.UseVisualStyleBackColor = true;
+            this.btnDodajIgrac.Click += new System.EventHandler(this.btnDodajIgrac_Click);
             // 
             // lblIgrac
             // 
@@ -244,8 +244,8 @@
             this.Controls.Add(this.lblIgrac);
             this.Controls.Add(this.btnDodajIgrac);
             this.Controls.Add(this.lblTelefon);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBrojMobitela);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.txtPrezime);
             this.Controls.Add(this.Prezime);
@@ -280,8 +280,8 @@
         private System.Windows.Forms.TextBox txtPrezime;
         private System.Windows.Forms.Label Prezime;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtBrojMobitela;
         private System.Windows.Forms.Label lblTelefon;
         private System.Windows.Forms.Button btnDodajIgrac;
         private System.Windows.Forms.Label lblIgrac;
