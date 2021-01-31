@@ -12,6 +12,8 @@ namespace TurnirAistentModel.Konekcije
 {
     public class SqlKonekcija : IKonekcija
     {
+        private const string db = "TurnirBaza";
+
         // TODO - Dovrši metodu StvoriNagradu, za sad ne sprema niš
         /// <summary>
         /// Spremi novu nagradu u bazu podataka
@@ -20,7 +22,7 @@ namespace TurnirAistentModel.Konekcije
         /// <returns>Informaciju nagrade i id nagrade</returns>
         public NagradaModel StvoriNagradu(NagradaModel model)
         {
-            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.KonekcijaString("TurnirBaza")))
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.KonekcijaString(db)))
             {
                 var p = new DynamicParameters();
                 p.Add("@osvojenoMjesto", model.OsvojenoMjesto);
@@ -39,7 +41,7 @@ namespace TurnirAistentModel.Konekcije
 
         public OsobaModel StvoriOsobu(OsobaModel model)
         {
-            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.KonekcijaString("TurnirBaza")))
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.KonekcijaString(db)))
             {
                 var p = new DynamicParameters();
                 p.Add("@ime", model.Ime);
@@ -54,6 +56,17 @@ namespace TurnirAistentModel.Konekcije
 
                 return model;
             }
+        }
+
+        public List<OsobaModel> DobiOsobu_Sve()
+        {
+            List<OsobaModel> output;
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.KonekcijaString(db))) 
+            {
+                output = connection.Query<OsobaModel>("dbo.spOsoba_DobiSve").ToList();
+            }
+
+            return output;
         }
     }
 }

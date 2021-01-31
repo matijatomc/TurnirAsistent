@@ -14,9 +14,40 @@ namespace AsistentGUI.Forme
 {
     public partial class KreiranjeTima : Form
     {
+        private List<OsobaModel> dostupniClanociTima = GlobalConfig.Konekcija.DobiOsobu_Sve();
+        private List<OsobaModel> odabraniClanoviTima = new List<OsobaModel>();
+
         public KreiranjeTima()
         {
             InitializeComponent();
+
+            //StvoriSampleData();
+
+            SpojitList();
+        }
+
+        private void StvoriSampleData()
+        {
+            dostupniClanociTima.Add(new OsobaModel { Ime = "Matija", Prezime = "Tomc" });
+            dostupniClanociTima.Add(new OsobaModel { Ime = "Tim", Prezime = "Corey" });
+
+            odabraniClanoviTima.Add(new OsobaModel { Ime = "Jane", Prezime = "Smith" });
+            odabraniClanoviTima.Add(new OsobaModel { Ime = "Bill", Prezime = "Jones" });
+        }
+
+        private void SpojitList()
+        {
+            cmbNoviIgrac.DataSource = null;
+
+            cmbNoviIgrac.DataSource = dostupniClanociTima;
+            cmbNoviIgrac.DisplayMember = "PunoIme";
+
+            lstIgraca.DataSource = null;
+
+            lstIgraca.DataSource = odabraniClanoviTima;
+            lstIgraca.DisplayMember = "PunoIme";
+
+            cmbNoviIgrac.Refresh();
         }
 
         private void btnDodajIgrac_Click(object sender, EventArgs e)
@@ -30,7 +61,11 @@ namespace AsistentGUI.Forme
                 p.EmailAdresa = txtEmail.Text;
                 p.BrojMobitela = txtBrojMobitela.Text;
 
-                GlobalConfig.Konekcija.StvoriOsobu(p);
+                p = GlobalConfig.Konekcija.StvoriOsobu(p);
+
+                odabraniClanoviTima.Add(p);
+
+                SpojitList();
 
                 txtIme.Text = "";
                 txtPrezime.Text = "";
@@ -66,6 +101,32 @@ namespace AsistentGUI.Forme
             }
 
             return true;
+        }
+
+        private void btnDodaj_Click(object sender, EventArgs e)
+        {
+            OsobaModel p = (OsobaModel)cmbNoviIgrac.SelectedItem;
+
+            if (p!=null)
+            {
+                dostupniClanociTima.Remove(p);
+                odabraniClanoviTima.Add(p);
+
+                SpojitList(); 
+            }
+        }
+
+        private void btnUkloni_Click(object sender, EventArgs e)
+        {
+            OsobaModel p = (OsobaModel)lstIgraca.SelectedItem;
+
+            if (p!=null)
+            {
+                odabraniClanoviTima.Remove(p);
+                dostupniClanociTima.Add(p);
+
+                SpojitList(); 
+            }
         }
     }
 }

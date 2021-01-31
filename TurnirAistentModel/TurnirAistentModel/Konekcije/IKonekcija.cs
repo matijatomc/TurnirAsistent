@@ -11,5 +11,6 @@ namespace TurnirAistentModel.Konekcije
     {
         NagradaModel StvoriNagradu(NagradaModel model);
         OsobaModel StvoriOsobu(OsobaModel model);
+        List<OsobaModel> DobiOsobu_Sve();
     }
 }

@@ -45,7 +45,7 @@
             this.btnDodajIgrac = new System.Windows.Forms.Button();
             this.lblIgrac = new System.Windows.Forms.Label();
             this.lstIgraca = new System.Windows.Forms.ListBox();
-            this.btnIzbrisi = new System.Windows.Forms.Button();
+            this.btnUkloni = new System.Windows.Forms.Button();
             this.btnUredi = new System.Windows.Forms.Button();
             this.btnKreirajTim = new System.Windows.Forms.Button();
             this.btnOdustani = new System.Windows.Forms.Button();
@@ -84,6 +84,7 @@
             this.btnDodaj.TabIndex = 4;
             this.btnDodaj.Text = "Dodaj";
             this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // cmbNoviIgrac
             // 
@@ -195,14 +196,15 @@
             this.lstIgraca.Size = new System.Drawing.Size(264, 354);
             this.lstIgraca.TabIndex = 17;
             // 
-            // btnIzbrisi
+            // btnUkloni
             // 
-            this.btnIzbrisi.Location = new System.Drawing.Point(806, 74);
-            this.btnIzbrisi.Name = "btnIzbrisi";
-            this.btnIzbrisi.Size = new System.Drawing.Size(119, 39);
-            this.btnIzbrisi.TabIndex = 18;
-            this.btnIzbrisi.Text = "Izbriši";
-            this.btnIzbrisi.UseVisualStyleBackColor = true;
+            this.btnUkloni.Location = new System.Drawing.Point(806, 74);
+            this.btnUkloni.Name = "btnUkloni";
+            this.btnUkloni.Size = new System.Drawing.Size(119, 39);
+            this.btnUkloni.TabIndex = 18;
+            this.btnUkloni.Text = "Ukloni";
+            this.btnUkloni.UseVisualStyleBackColor = true;
+            this.btnUkloni.Click += new System.EventHandler(this.btnUkloni_Click);
             // 
             // btnUredi
             // 
@@ -239,7 +241,7 @@
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnKreirajTim);
             this.Controls.Add(this.btnUredi);
-            this.Controls.Add(this.btnIzbrisi);
+            this.Controls.Add(this.btnUkloni);
             this.Controls.Add(this.lstIgraca);
             this.Controls.Add(this.lblIgrac);
             this.Controls.Add(this.btnDodajIgrac);
@@ -286,7 +288,7 @@
         private System.Windows.Forms.Button btnDodajIgrac;
         private System.Windows.Forms.Label lblIgrac;
         private System.Windows.Forms.ListBox lstIgraca;
-        private System.Windows.Forms.Button btnIzbrisi;
+        private System.Windows.Forms.Button btnUkloni;
         private System.Windows.Forms.Button btnUredi;
         private System.Windows.Forms.Button btnKreirajTim;
         private System.Windows.Forms.Button btnOdustani;

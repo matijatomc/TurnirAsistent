@@ -28,5 +28,14 @@ namespace TurnirAistentModel.Modeli
         /// Broji mobitela tog istog člana
         /// </summary>
         public string BrojMobitela { get; set; }
+
+        public string PunoIme
+        {
+            get
+            {
+                return $"{Ime} {Prezime}";
+            }
+
+        }
     }
 }

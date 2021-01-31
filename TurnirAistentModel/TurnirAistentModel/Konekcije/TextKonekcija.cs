@@ -14,6 +14,11 @@ namespace TurnirAistentModel.Konekcije
         private const string NagradeDatoteke = "NagradaModeli.csv";
         private const string OsobeDatoteke = "OsobaModeli.csv";
 
+        public List<OsobaModel> DobiOsobu_Sve()
+        {
+            return OsobeDatoteke.CijeliPutPodataka().UcitajDatoteku().PretvoriUOsobaModel();
+        }
+
         // TODO - Spoji StvoriNagradu u text datoteku
         public NagradaModel StvoriNagradu(NagradaModel model)
         {
